@@ -34,5 +34,5 @@ define([
 		}, Function.prototype.bind);
 
 		return me;
-	}).call({}, ( this || window ).console || {});
+	}).call({}, ( typeof window !== "undefined" ? window : global ).console || {});
 });
